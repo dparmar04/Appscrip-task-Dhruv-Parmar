@@ -240,5 +240,9 @@
   .sidebarOpen{
     display: none;
   }
+  .image {
+    height: 100%;
+  }
+  
 }
 

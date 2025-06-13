@@ -170,18 +170,6 @@
   transform: rotate(180deg);
 }
 
-
-@media (max-width: 768px) {
-  .footerContent {
-    flex-direction: column;
-    gap: 40px;
-  }
-
-  .currencyNote{
-    display: none;
-  }
-}
-
 @media (max-width: 768px) {
   .topSection {
     flex-direction: column;
@@ -193,5 +181,13 @@
 
   .linksContainer {
     display: block;
+  }
+  .footerContent {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .currencyNote{
+    display: none;
   }
 }

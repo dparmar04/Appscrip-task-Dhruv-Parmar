@@ -1,8 +1,9 @@
 'use client';
 import { useState, useEffect } from 'react';
-import styles from '../styles/Footer.module.css';
+import styles from './Footer.module.css';
 import { CiInstagram, CiLinkedin } from "react-icons/ci"; // use proper icons
 import { BsChevronDown } from "react-icons/bs";
+import Image from 'next/image';
 
 
 const AccordionSection = ({ title, children }) => {
@@ -102,7 +103,7 @@ const Footer = () => {
             <div className={styles.paymentSection}>
               <h3>mettā muse ACCEPTS</h3>
               <div className={styles.paymentIcons}>
-                <img src='/payment.png' />
+                <Image src='/payment.png' alt='payment images' width={350} height={30} />
               </div>
             </div>
           </>
@@ -142,7 +143,7 @@ const Footer = () => {
               <div className={styles.paymentSection}>
                 <h3>mettā muse ACCEPTS</h3>
                 <div className={styles.paymentIcons}>
-                  <img src='/payment.png' />
+                  <Image src='/payment.png' alt='payment images' width={350} height={30} />
                 </div>
               </div>
             </div>

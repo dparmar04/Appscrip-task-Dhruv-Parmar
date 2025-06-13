@@ -121,7 +121,7 @@ export default function ProductList() {
             <div key={product.id} className={styles.productCard}>
               <div className={styles.imageWrapper}>
                 {product.status && <div className={styles.badge}>{product.status}</div>}
-                <img src={product.image} alt={product.name} className={styles.image} />
+                <Image src={product.image} alt={product.name} className={styles.image} width={307} height={409} />
               </div>
               <div className={styles.productInfo}>
                 <div className={styles.signIn}>
