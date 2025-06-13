@@ -12,8 +12,8 @@ export default function Hero() {
               "@context": "https://schema.org",
               "@type": "Organization",
               "name": "Metta Muse",
-              "url": "https://www.mettamuse.com",
-              "logo": "https://www.mettamuse.com/logo.png",
+              "url": "https://appscrip-task-dhruvparmar.netlify.app",
+              "logo": "https://appscrip-task-dhruvparmar.netlify.app/logo.png",
             }),
           }}
         />
