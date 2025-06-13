@@ -1,0 +1,50 @@
+.hero {
+  text-align: center;
+  padding: 0 30px;
+}
+.mobileHeading {
+  display: none;
+}
+.titles {
+  padding: 40px 20px;
+}
+.hero h1 {
+  font-size: 46px;
+  font-weight: normal;
+  letter-spacing: 2px;
+}
+
+.hero .subheading {
+  max-width: 600px;
+  margin: 20px auto 0;
+  font-size: 18px;
+  color: #444;
+  line-height: 2;
+}
+
+@media screen and (max-width: 768px) {
+  .hero {
+    padding: 10px;
+  }
+  .hero h1 {
+    font-size: 26px;
+    margin: 0;
+  }
+  .hero .subheading{
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  .titles {
+    padding: 20px;
+  }
+  .mobileHeading {
+    display: flex;
+    gap: 8px;
+    margin-top: 20px;
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+  .mobileHeading :nth-child(1){
+    color: gray;
+  }
+}

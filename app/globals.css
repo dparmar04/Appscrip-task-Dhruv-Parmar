@@ -1,42 +1,38 @@
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@font-face {
+  font-family: 'Simplon Norm';
+  src: url('/fonts/SimplonNorm-Regular-WebS.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+@font-face {
+  font-family: 'Simplon Norm';
+  src: url('/fonts/SimplonNorm-Medium-WebS.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
 }
 
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
+@font-face {
+  font-family: 'Simplon Norm';
+  src: url('/fonts/SimplonNorm-bold-WebS.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+h1 {
+  font-weight: 700;
 }
 
-* {
-  box-sizing: border-box;
-  padding: 0;
+p {
+  font-weight: 400;
   margin: 0;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+nav a {
+  font-weight: 500;
 }
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Simplon Norm', sans-serif;
 }

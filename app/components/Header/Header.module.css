@@ -1,0 +1,134 @@
+.header {
+  border-bottom: 1px solid #ddd;
+  position: relative;
+}
+.anouncement {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 5px 0;
+  color: #EB4C6B;
+  font-size: 16px;
+  background-color: black;
+}
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  position: relative;
+}
+
+.leftSection {
+  display: flex;
+  gap: 15px;
+  width: 33%;
+}
+
+.logoSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 33%;
+}
+
+.logo {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.icons {
+  display: flex;
+  gap: 20px;
+  font-size: 20px;
+  align-items: center;
+  justify-content: flex-end;
+  width: 33%;
+}
+
+.language {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 16px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  padding: 35px 0px 20px;
+}
+
+.navbar ul {
+  display: flex;
+  gap: 40px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.hamburger {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.mobileMenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background: white;
+  z-index: 999;
+  border-top: 1px solid #ddd;
+  padding: 20px;
+  animation: slideDown 0.3s ease forwards;
+}
+
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.mobileMenu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.mobileMenu ul li {
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+.hideOnMobile {
+  display: flex;
+}
+@media (max-width: 768px) {
+  .hideOnMobile {
+    display: none !important;
+  }
+  .anouncement :nth-child(1){
+    display: none;
+  }
+  .anouncement :nth-child(2){
+    display: none;
+  }
+}
+
+/* Responsive Part */
+@media (max-width: 768px) {
+  .navbar {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+  .icons {
+    gap: 10px;
+    font-size: 24px;
+  }
+}
